@@ -10,7 +10,7 @@ IMC em adultos:
 */
 
 
-const pesoEmKg = 80;
+const pesoEmKg = 56;
 const altura = 1.80;
 const imc = pesoEmKg / (altura * altura);
 
