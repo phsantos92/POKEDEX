@@ -12,7 +12,7 @@ const precoEtanol = 4.65;
 const precoGasolina = 5.15;
 const consumoMedio = 18;
 const distancia = 500; 
-const tipoCombustivel = 'Etanol';
+const tipoCombustivel = 'Gasolina';
 
 const litrosConsumidos = distancia / consumoMedio;
 
