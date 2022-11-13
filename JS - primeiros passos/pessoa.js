@@ -9,17 +9,16 @@ class Pessoa{
 
 }
 
-const pessoa = {
-    nome: "pedro",
-    idade: 30,
+    const pedro = new Pessoa();
+    pedro.nome = 'Pedro Henrique Pereira dos Santos';
+    pedro.idade = 31;
 
-    descrever: function(){
+    const joao = new Pessoa();
+    joao.nome = 'João da Silva';
+    joao.idade = 23;
 
-        // demorei bastante para notar que nesse caso usamos ASPAS INVERTIDAS
-        console.log(`Meu nome é: ${this.nome}, e minha idade é: ${this.idade}`);
+pedro.descrever();      //imprimindo apenas o resultado do método
+joao.descrever();
 
-    }
-};
-
-pessoa.descrever();
-
+console.log(pedro);    
+console.log(joao);
