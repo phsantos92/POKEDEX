@@ -1,8 +1,8 @@
 const notas = [];
 
-notas.push[10];
-notas.push[10];
-notas.push[10];
+notas.push(10);
+notas.push(10);
+notas.push(10);
 
 
 let soma = 0
