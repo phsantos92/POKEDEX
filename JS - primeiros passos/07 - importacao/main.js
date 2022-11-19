@@ -4,22 +4,16 @@
 
 const { gets, print } = require('./funcoes-auxiliares');    // objeto funcoes recebe o arquivo a ser importado.
 
-const numerosSorteados = [];      //Inicializando uma lista vazia
 
-let maiorValor = 0      //Variável iniciando com 0 para ser atribuída ao maior valor no resultado da comparação
+const quantidadeDeNumeros = gets();     //quantidade de números vai receber 5 números
+let maiorNota = 0;
 
-for (let i = 0; i < 5; i++) {       //enquanto i for menor que os 5 números
-    const numeroSorteado = gets();     //variável número sorteado recebe o objeto gets, que tem tem como retorno o número
-    numerosSorteados.push(numeroSorteado);
+for (let i = 0; i < quantidadeDeNumeros; i++) {        //para cada número recebido, será feita a comparação.
 
-    if(numeroSorteado > maiorValor){
-        maiorValor = numeroSorteado;
+    const notas = gets();
+    if(notas > maiorNota){
+        maiorNota = notas;
     }
 }
 
-
-print(maiorValor);
-
-//preciso receber 5 números...
-
-print(gets());
+print(maiorNota);
